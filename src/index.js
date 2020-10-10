@@ -1,10 +1,11 @@
 module.exports = function reverse (n) {
-    let reverse = "";
-    for (const i = n.length - 1; i >= 0; i--) {
-        reverse += n[i];
+    let str = String(n);
+    let result = '';
+    for (i = str.length - 1; i >= 0; i--) {
+      result += str[i];
     }
-    return reverse;
-}
-
-console.log(reverse (n)); 
+    if (result[str.length - 1] == '-') {
+    let result = result.substring(0, result.length — 1);
+    }
+    return result;
 }
